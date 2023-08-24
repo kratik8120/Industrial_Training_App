@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jecrc2"
+    android:background="@drawable/back"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/logo2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonStudent"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="70dp"
@@ -25,10 +25,10 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonAdmin"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:text="Admin"
         android:textSize="24sp" />
 
