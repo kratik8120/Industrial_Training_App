@@ -4,6 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blue3"
     tools:context=".StudentLogin">
 
+     <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+
+        android:layout_marginTop="35dp"
+        android:text="Roll No"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Enter the Roll no"
+        android:inputType="text"
+        android:paddingLeft="12dp" />
+
+    <TextView
+        android:id="@+id/pswd"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Enter the password"
+        android:inputType="numberPassword"
+        android:paddingLeft="12dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="130dp"
+
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textSize="22sp" />
+
+     
 </LinearLayout>
