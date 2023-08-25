@@ -4,38 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jecrc"
+    android:background="@drawable/back"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp"
-        android:text="Welcome"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonStudent"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginTop="70dp"
         android:text="Student"
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonAdmin"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Teacher"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:text="Admin"
         android:textSize="24sp" />
 
 </LinearLayout>
