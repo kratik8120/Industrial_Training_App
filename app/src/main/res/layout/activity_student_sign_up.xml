@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:background="@drawable/blue3"
+     android:background="@drawable/back"
     android:orientation="vertical"
     tools:context=".StudentSignUp">
 
@@ -48,7 +48,7 @@
         android:textSize="27sp" />
 
     <EditText
-        android:id="@+id/enterrolno"
+        android:id="@+id/enterRollNo"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginLeft="55dp"
@@ -69,7 +69,7 @@
         android:textSize="27sp" />
 
     <EditText
-        android:id="@+id/entermail"
+        android:id="@+id/enterMail"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginLeft="55dp"

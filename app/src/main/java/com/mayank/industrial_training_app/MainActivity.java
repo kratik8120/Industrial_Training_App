@@ -25,5 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(MainActivity.this, StudentSignUp.class);
+                startActivity(i);
+
+            }
+        });
     }
 }

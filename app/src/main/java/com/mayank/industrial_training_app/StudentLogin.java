@@ -3,10 +3,13 @@ package com.mayank.industrial_training_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class StudentLogin extends AppCompatActivity {
 
-       TextView intro;
+    TextView intro;
     TextView rollno;
     EditText enterroll;
     TextView pswd;

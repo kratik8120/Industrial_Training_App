@@ -2,7 +2,12 @@ package com.mayank.industrial_training_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class StudentSignUp extends AppCompatActivity {
 
@@ -26,13 +31,11 @@ public class StudentSignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_sign_up);
 
-         Signup=findViewById(R.id.heading);
+        Signup=findViewById(R.id.heading);
         Name=findViewById(R.id.name);
         entername=findViewById(R.id.entername);
-        rollno=findViewById(R.id.rollno);
-        enterroll=findViewById(R.id.enterrolno);
-        mail=findViewById(R.id.mailid);
-        entermail=findViewById(R.id.entermail);
+        enterroll=findViewById(R.id.enterRollNo);
+        entermail=findViewById(R.id.enterMail);
         pswd=findViewById(R.id.pswd);
         enterpswd=findViewById(R.id.enter);
         signup=findViewById(R.id.submit);
@@ -41,10 +44,11 @@ public class StudentSignUp extends AppCompatActivity {
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
 
                 Intent i=new Intent(getApplicationContext(), StudentLogin.class);
                 startActivity(i);
+
             }
         });
     }
