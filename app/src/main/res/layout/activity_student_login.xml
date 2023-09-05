@@ -8,9 +8,8 @@
     android:orientation="vertical"
     tools:context=".StudentLogin">
 
-    
 
-      <TextView
+    <TextView
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,25 +20,25 @@
 
 
     <TextView
-        android:id="@+id/name"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="55dp"
-
-        android:layout_marginTop="35dp"
-        android:text="Roll No"
-        android:textSize="28sp" />
-
-    <EditText
-        android:id="@+id/entername"
+        android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="42dp"
         android:layout_marginLeft="55dp"
-        android:layout_marginTop="9dp"
+
+        android:layout_marginTop="35dp"
+        android:text="Email Id"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="Enter the Roll no"
-        android:inputType="text"
-        android:paddingLeft="12dp" />
+        android:hint="Enter Your Mail Id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="14dp" />
 
     <TextView
         android:id="@+id/pswd"
