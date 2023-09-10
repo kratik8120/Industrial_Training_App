@@ -1,9 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@drawable/blue3"
     tools:context=".StudentUpload">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+
+        android:text="Industrial Training Details "
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="1st year IT deatail"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="Certificate"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="2nd year IT deatail"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="Certificate"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="2nd year IT deatail"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="18dp"
+        android:text="Certificate"
+        android:textSize="22sp"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>
