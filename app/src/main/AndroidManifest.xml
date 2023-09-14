@@ -26,9 +26,6 @@
             android:exported="false"
             android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".MainMenu"
-            android:exported="false" />
-        <activity
             android:name=".StudentSignUp"
             android:exported="false" />
         <activity

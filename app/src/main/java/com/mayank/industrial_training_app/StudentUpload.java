@@ -2,7 +2,11 @@ package com.mayank.industrial_training_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class StudentUpload extends AppCompatActivity {
 
@@ -20,5 +24,27 @@ public class StudentUpload extends AppCompatActivity {
         but4=findViewById(R.id.button6);
         but5=findViewById(R.id.button7);
         but6=findViewById(R.id.button8);
+
+        but1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(StudentUpload.this, StudentInfo.class);
+                startActivity(i);
+            }
+        });
+        but3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(StudentUpload.this, StudentInfo.class);
+                startActivity(i);
+            }
+        });
+        but5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(StudentUpload.this, StudentInfo.class);
+                startActivity(i);
+            }
+        });
     }
 }

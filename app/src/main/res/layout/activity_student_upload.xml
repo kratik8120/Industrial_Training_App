@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
      android:orientation="vertical"
-    android:background="@drawable/blue3"
+    android:background="@drawable/back"
     tools:context=".StudentUpload">
 
     <TextView
@@ -86,7 +86,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:paddingTop="18dp"
-        android:text="2nd year IT deatail"
+        android:text="3rd year IT deatail"
         android:textSize="22sp"
         app:cornerRadius="1dp" />
 

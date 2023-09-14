@@ -3,6 +3,8 @@ package com.mayank.industrial_training_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class AdminCheck extends AppCompatActivity {
       ImageView img;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    android:background="@drawable/blue3"
+    android:background="@drawable/logo2"
     tools:context=".AdminCheck">
 
      <ImageView
@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
 
-        app:srcCompat="@drawable/jecrc1" />
+        app:srcCompat="@drawable/back" />
 
     <Button
         android:id="@+id/button11"

@@ -51,7 +51,7 @@ public class StudentLogin extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(StudentLogin.this,"Login Successful",Toast.LENGTH_SHORT).show();
-                            Intent i=new Intent(StudentLogin.this, MainMenu.class);
+                            Intent i=new Intent(StudentLogin.this, StudentUpload.class);
                             startActivity(i);
 
                         } else {

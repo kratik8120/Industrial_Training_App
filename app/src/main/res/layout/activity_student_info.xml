@@ -33,7 +33,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/editTextname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -62,7 +62,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/editTextrollno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -90,7 +90,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/editTextphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -118,7 +118,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/editTextmode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -147,7 +147,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/editTexturl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -175,7 +175,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/editTextsection"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -203,7 +203,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText6"
+                android:id="@+id/editTextproject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -234,7 +234,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/enterduration"
+                android:id="@+id/editTextduration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="38dp"
@@ -262,7 +262,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText9"
+                android:id="@+id/editTexttechnology"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18dp"
@@ -290,7 +290,7 @@
                 android:textSize="22sp" />
 
             <EditText
-                android:id="@+id/editTextText10"
+                android:id="@+id/editTextorganisation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -300,6 +300,12 @@
                 android:inputType="text"
                 android:textSize="22sp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
 
 
     </LinearLayout>

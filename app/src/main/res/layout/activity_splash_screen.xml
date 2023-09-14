@@ -11,9 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="matrix"
-        app:srcCompat="@drawable/jecrc"
+        app:srcCompat="@drawable/logo2"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
@@ -21,7 +22,8 @@
         android:layout_height="45dp"
         android:text="TextView"
         tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="149dp" />
+        tools:layout_editor_absoluteY="149dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -29,5 +31,6 @@
         android:layout_height="102dp"
         app:srcCompat="@drawable/logo2"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="3dp" />
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
