@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +17,9 @@
         android:theme="@style/Theme.Industrial_Training_app"
         tools:targetApi="31">
         <activity
+            android:name=".AdminStudentInfo"
+            android:exported="false" />
+        <activity
             android:name=".StudentInfo"
             android:exported="false" />
         <activity
@@ -20,11 +27,10 @@
             android:exported="false" />
         <activity
             android:name=".StudentUpload"
-            android:exported="false" />
-        <activity
-            android:name=".Splash_Screen"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Splash_Screen" -->
+        <!-- android:exported="false" -->
+        <!-- android:theme="@style/AppTheme.Splash" /> -->
         <activity
             android:name=".StudentSignUp"
             android:exported="false" />

@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Name"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
@@ -41,6 +42,7 @@
                 android:ems="10"
                 android:hint="Enter the name"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
         </LinearLayout>
@@ -59,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Roll no"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
@@ -70,6 +73,7 @@
                 android:ems="10"
                 android:hint="Enter the rollno"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -87,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Phone no"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
@@ -98,6 +103,7 @@
                 android:ems="10"
                 android:hint="Enter the phone no"
                 android:inputType="phone"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -115,17 +121,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Mode"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
                 android:id="@+id/editTextmode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:layout_marginLeft="5dp"
                 android:hint="Enter the mode "
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
         </LinearLayout>
@@ -144,17 +152,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Url"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
                 android:id="@+id/editTexturl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:layout_marginLeft="5dp"
                 android:hint="Enter the url"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -172,17 +182,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Section"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
                 android:id="@+id/editTextsection"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:layout_marginLeft="5dp"
                 android:hint="Enter the section"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -200,17 +212,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Project"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
                 android:id="@+id/editTextproject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:layout_marginLeft="5dp"
                 android:hint="Enter your peoject name"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
         </LinearLayout>
@@ -231,6 +245,7 @@
                 android:layout_weight="1"
                 android:text="Duration"
 
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
@@ -242,6 +257,7 @@
                 android:ems="10"
                 android:hint="Enter your Duration"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -259,6 +275,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Technology"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
@@ -270,6 +287,7 @@
                 android:ems="10"
                 android:hint="Enter the technology"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
@@ -287,17 +305,19 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:text="Organisation"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <EditText
                 android:id="@+id/editTextorganisation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:layout_marginLeft="5dp"
                 android:hint="Enter your organisation"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
         </LinearLayout>
 
