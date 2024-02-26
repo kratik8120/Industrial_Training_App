@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class StudentInfo extends AppCompatActivity {
+public class StudentInfo2 extends AppCompatActivity {
 
     EditText name,rollno,phone,mode,url,section,project,technology,organisation,duration;
     Button save;
@@ -29,17 +29,17 @@ public class StudentInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_info);
 
-        name=findViewById(R.id.editTextname);
-        rollno=findViewById(R.id.editTextrollno);
-        phone=findViewById(R.id.editTextphone);
-        mode=findViewById(R.id.editTextmode);
-        url=findViewById(R.id.editTexturl);
-        section=findViewById(R.id.editTextsection);
-        project=findViewById(R.id.editTextproject);
-        duration=findViewById(R.id.editTextduration);
-        technology=findViewById(R.id.editTexttechnology);
-        organisation=findViewById(R.id.editTextorganisation);
-        save=findViewById(R.id.buttonsave);
+        name=findViewById(R.id.editTextname2);
+        rollno=findViewById(R.id.editTextrollno2);
+        phone=findViewById(R.id.editTextphone2);
+        mode=findViewById(R.id.editTextmode2);
+        url=findViewById(R.id.editTexturl2);
+        section=findViewById(R.id.editTextsection2);
+        project=findViewById(R.id.editTextproject2);
+        duration=findViewById(R.id.editTextduration2);
+        technology=findViewById(R.id.editTexttechnology2);
+        organisation=findViewById(R.id.editTextorganisation2);
+        save=findViewById(R.id.buttonsave2);
 
         db=FirebaseFirestore.getInstance();
 
@@ -74,20 +74,20 @@ public class StudentInfo extends AppCompatActivity {
                 S_duration=duration.getText().toString();
 
                 UserModel data=new UserModel(S_name,S_roll_no,S_Mode,S_Url,S_Section,S_Project,S_Technology
-                ,S_Organisation,S_Phone,S_duration);
-                db.collection("First Year IT").document().set(data)
+                        ,S_Organisation,S_Phone,S_duration);
+                db.collection("Second Year Student").document().set(data)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if(task.isSuccessful())
-                        {
-                            Toast.makeText(StudentInfo.this,"Details Added Successfully",Toast.LENGTH_LONG).show();
-                        }
-                        else {
-                            Toast.makeText(StudentInfo.this,"Error Occur",Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if(task.isSuccessful())
+                                {
+                                    Toast.makeText(StudentInfo2.this,"Details Added Successfully",Toast.LENGTH_LONG).show();
+                                }
+                                else {
+                                    Toast.makeText(StudentInfo2.this,"Error Occur",Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        });
             }
         });
 

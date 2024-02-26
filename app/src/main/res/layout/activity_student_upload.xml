@@ -18,6 +18,7 @@
 
 
         android:text="Industrial Training Details "
+        android:textColor="@color/black"
         android:textSize="25sp" />
 
     <Button

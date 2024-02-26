@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,6 +24,7 @@ public class StudentLogin extends AppCompatActivity {
     EditText enteremail;
     EditText enterpswd;
     Button login;
+    TextView forget;
     FirebaseAuth auth=FirebaseAuth.getInstance();
 
     @Override
@@ -32,6 +35,19 @@ public class StudentLogin extends AppCompatActivity {
         enteremail=findViewById(R.id.editTextEmailAddress);
         enterpswd=findViewById(R.id.enter);
         login=findViewById(R.id.submit);
+        forget=findViewById(R.id.textViewForget);
+
+        Animation animation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.move);
+        enteremail.setAnimation(animation);
+        enterpswd.setAnimation(animation);
+
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(StudentLogin.this,ForgetActivity.class);
+                startActivity(i);
+            }
+        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,10 +55,12 @@ public class StudentLogin extends AppCompatActivity {
 
                 String userEmail=enteremail.getText().toString();
                 String userPassword=enterpswd.getText().toString();
-                SignInFirebase(userEmail,userPassword);
-                if(TextUtils.isEmpty(userEmail))
+                if(TextUtils.isEmpty(userEmail)||TextUtils.isEmpty(userPassword))
                 {
-                    Toast.makeText(StudentLogin.this, "Enter the Email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StudentLogin.this, "Enter the Data", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    SignInFirebase(userEmail, userPassword);
                 }
             }
         });

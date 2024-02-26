@@ -9,10 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".studentinfo">
+        tools:context=".AdminFinalPage">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -22,55 +22,61 @@
             android:textSize="34sp"
             android:textColor="#0000cd"/>
 
-               <TextView
-                   android:id="@+id/textViewName"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginLeft="30dp"
-                   android:layout_marginTop="10dp"
-                   android:layout_weight="1"
-                   android:text="Name"
-                   android:textSize="34sp"
-                   android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/editTextname"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/box"
-                android:drawableStart="@drawable/baseline_person_24"
-                android:drawablePadding="10dp"
-                android:hint="Name of the student"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/textViewRoll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:text="Roll No.                       "
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextrollno"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/box"
-                android:drawableStart="@drawable/baseline_format_list_numbered_rtl_24"
-                android:drawablePadding="10dp"
-                android:hint="roll number of the student"
-                android:padding="10dp" />
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:hint="Name of the student"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Roll No.                       "
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentRoll"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:drawableStart="@drawable/baseline_format_list_numbered_rtl_24"
+            android:drawablePadding="10dp"
+            android:hint="roll number of the student"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -80,8 +86,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextsection"
+        <TextView
+            android:id="@+id/studentSection"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -92,55 +98,35 @@
             android:hint="section of the student"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/textViewphone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:text="Phone no."
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextphone"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/box"
-                android:drawableStart="@drawable/baseline_local_phone_24"
-                android:drawablePadding="10dp"
-                android:hint="phone of the phone number"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/textViewduration"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:text="Duration"
+            android:text="Phone no."
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextduration"
+        <TextView
+            android:id="@+id/studentPhone"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
             android:layout_weight="1"
             android:background="@drawable/box"
-            android:drawableStart="@drawable/baseline_format_list_numbered_rtl_24"
+            android:drawableStart="@drawable/baseline_local_phone_24"
             android:drawablePadding="10dp"
-            android:hint="Duration of course"
-            android:padding="10dp" />
+            android:hint="phone of the phone number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
@@ -152,8 +138,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextproject"
+        <TextView
+            android:id="@+id/studentProject"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -166,6 +152,7 @@
             android:textSize="16sp"
             android:textColor="@color/black" />
 
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
@@ -177,8 +164,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextorganisation"
+        <TextView
+            android:id="@+id/studentOrganisation"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -186,7 +173,7 @@
             android:background="@drawable/box"
             android:drawableStart="@drawable/baseline_meeting_room_24"
             android:drawablePadding="10dp"
-            android:hint="name of organisation"
+            android:hint="name"
             android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -203,8 +190,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTexttechnology"
+        <TextView
+            android:id="@+id/studentTechnology"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -229,8 +216,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextmode"
+        <TextView
+            android:id="@+id/studentMode"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -255,8 +242,8 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTexturl"
+        <TextView
+            android:id="@+id/studentUrl"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="40dp"
@@ -268,17 +255,5 @@
             android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/buttonsave"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="40dp"
-            android:text="Save"
-            android:layout_gravity="center_horizontal"/>
-
-
     </LinearLayout>
-
 </ScrollView>
-

@@ -17,30 +17,40 @@
         android:theme="@style/Theme.Industrial_Training_app"
         tools:targetApi="31">
         <activity
+            android:name=".StudentInfo2"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BotPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSignUp"
+            android:exported="false" />
+        <activity
             android:name=".AdminStudentInfo"
             android:exported="false" />
         <activity
             android:name=".StudentInfo"
             android:exported="false" />
         <activity
-            android:name=".AdminCheck"
+            android:name=".StudentUpload"
             android:exported="false" />
         <activity
-            android:name=".StudentUpload"
-            android:exported="false" /> 
-        <activity -->
-        android:name=".Splash_Screen"
-        android:exported="true">
-             <intent-filter>
+            android:name=".Splash_Screen"
+            android:exported="true">
+
+            <!-- android:theme="@style/AppTheme.Splash" -->
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
-        <!-- android:theme="@style/AppTheme.Splash" />
-        <activity
-            android:name=".StudentSignUp"
-            android:exported="false" />
+        </activity>
         <activity
             android:name=".StudentLogin"
             android:exported="false" />
@@ -49,9 +59,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-           
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

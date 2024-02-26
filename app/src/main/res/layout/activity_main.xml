@@ -12,23 +12,22 @@
     <Button
         android:id="@+id/buttonStudent"
         android:layout_width="257dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="266dp"
+        android:layout_marginTop="316dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="183dp"
         android:text="Student"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAdmin"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonAdmin"
         android:layout_width="257dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="126dp"
@@ -36,8 +35,32 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStudent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonStudent"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <ImageView
+        android:id="@+id/imageViewBot"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewAbout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStudent"
+        app:srcCompat="@drawable/bot" />
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="211dp"
+        android:layout_marginBottom="25dp"
+        android:text="About"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBot"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBot"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

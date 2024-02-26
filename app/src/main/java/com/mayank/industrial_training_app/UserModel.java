@@ -1,5 +1,8 @@
 package com.mayank.industrial_training_app;
-public class UserModel {
+
+import java.io.Serializable;
+
+public class UserModel implements Serializable {
 
     String S_name,S_roll_no,S_Mode,S_Url,S_Section,S_Project,S_Technology,S_Organisation,S_Phone
             ,S_duration;

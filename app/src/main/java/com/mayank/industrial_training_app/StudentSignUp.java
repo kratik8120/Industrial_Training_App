@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -37,7 +40,13 @@ public class StudentSignUp extends AppCompatActivity {
         entermail=findViewById(R.id.enterMail);
         enterpswd=findViewById(R.id.enter);
         signup=findViewById(R.id.submit);
-        login=findViewById(R.id.textView2);
+        login=findViewById(R.id.login);
+
+        Animation animation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.move);
+        entername.setAnimation(animation);
+        enterroll.setAnimation(animation);
+        entermail.setAnimation(animation);
+        enterpswd.setAnimation(animation);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +54,14 @@ public class StudentSignUp extends AppCompatActivity {
                 String userEmail=entermail.getText().toString();
                 String userRoll=enterroll.getText().toString();
                 String userPassword=enterpswd.getText().toString();
-                SignUpFirebase(userName,userRoll,userEmail,userPassword);
+                String s1=null;
+                if(TextUtils.isEmpty(userName)||TextUtils.isEmpty(userEmail)||TextUtils.isEmpty(userRoll)||TextUtils.isEmpty(userPassword))
+                {
+                    Toast.makeText(StudentSignUp.this,"Please Enter the data",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    SignUpFirebase(userName, userRoll, userEmail, userPassword);
+                }
             }
         });
         login.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +87,7 @@ public class StudentSignUp extends AppCompatActivity {
                             startActivity(i);
 
                         } else {
-                            // If sign in fails, display a message to the user.
+                            // If sign up fails, display a message to the user.
                             Toast.makeText(StudentSignUp.this,"There is problem",Toast.LENGTH_SHORT).show();
 
                         }

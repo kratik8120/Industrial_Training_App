@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,6 +27,17 @@ public class StudentUpload extends AppCompatActivity {
         but5=findViewById(R.id.button7);
         but6=findViewById(R.id.button8);
 
+        Animation animation1= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.top);
+
+        head.setAnimation(animation1);
+
+        Animation animation2=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.move);
+        but1.setAnimation(animation2);
+        but2.setAnimation(animation2);
+        but3.setAnimation(animation2);
+        but4.setAnimation(animation2);
+        but5.setAnimation(animation2);
+        but6.setAnimation(animation2);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,14 +48,14 @@ public class StudentUpload extends AppCompatActivity {
         but3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(StudentUpload.this, StudentInfo.class);
+                Intent i=new Intent(StudentUpload.this, StudentInfo2.class);
                 startActivity(i);
             }
         });
         but5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(StudentUpload.this, StudentInfo.class);
+                Intent i=new Intent(StudentUpload.this, StudentInfo2.class);
                 startActivity(i);
             }
         });
