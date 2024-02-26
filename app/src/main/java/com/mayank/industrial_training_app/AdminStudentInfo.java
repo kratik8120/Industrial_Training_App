@@ -46,6 +46,7 @@ public class AdminStudentInfo extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String s) {
+                 Log.d("Search", "Query text changed: " + s);
                 filterList(s);
                 return true;
             }
