@@ -67,8 +67,15 @@ public class AdminStudentInfo extends AppCompatActivity {
         db.collection("Second Year Student").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-                if(error==null)
-                {
+
+                 if (error != null) {
+        // Handle the error, e.g., log or display a message to the user
+        Toast.makeText(AdminStudentInfo.this, "Error fetching data from Firestore", Toast.LENGTH_SHORT).show();
+        Log.e("FirestoreError", "Error fetching data", error);
+        return;
+    }
+                // if(error==null)
+                // {
                     List<UserModel> data= value.toObjects(UserModel.class);
                     listAllItem.clear();
                     listAllItem.addAll(data);
@@ -77,12 +84,13 @@ public class AdminStudentInfo extends AppCompatActivity {
                     recyclerView.setAdapter(new ReadDataAdapter(AdminStudentInfo.this,listAllItem));
                     filterList("");
 
-                }
+                // }
                 }
         });
     }
     private void filterList(String text)
     {
+        Log.d("Search", "Filtering with text: " + text);
         ArrayList<UserModel> filterdList=new ArrayList<>();
         for(UserModel item:listAllItem)
         {
